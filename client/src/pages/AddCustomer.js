@@ -2,7 +2,7 @@ import { ALERT_ERROR } from "../utils/Constants"
 import { useDispatch, useSelector } from "react-redux";
 import Alert from "../components/Alert";
 import { useEffect, useState } from "react";
-import { addCustomer } from "../redux/actions/customerActions";
+import { addCustomer, resetCustomerState } from "../redux/actions/customerActions";
 import { useNavigate } from "react-router-dom";
 import Loader from "../components/Loader";
 
@@ -34,6 +34,10 @@ function AddCustomer() {
     useEffect(() => {
         if(customer) {
             navigate(`/customers/${customer._id}`)
+        }
+
+        return () => {
+            dispatch(resetCustomerState())
         }
     }, [customer])
 

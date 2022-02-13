@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Alert from "../components/Alert";
 import Loader from "../components/Loader";
-import { addProduct } from "../redux/actions/productActions";
+import { addProduct, resetProductState } from "../redux/actions/productActions";
 import { ALERT_ERROR } from "../utils/Constants";
 
 function AddProduct() {
@@ -26,6 +26,10 @@ function AddProduct() {
     useEffect(() => {
         if(product) {
             navigate("/products")
+        }
+
+        return () => {
+            dispatch(resetProductState())
         }
     }, [product])
 

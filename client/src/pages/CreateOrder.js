@@ -121,6 +121,10 @@ function CreateOrder() {
         if(order) {
             navigate(`/orders/${order._id}`)
         }
+
+        return () => {
+            dispatch(resetOrderState())
+        }
     }, [order])
     
     const productOptionsMarkup = productList && Array.isArray(productList) && productList.map(productOption => {
