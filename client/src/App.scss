@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;700;900&display=swap');
+
+$default-font: 'Urbanist', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $default-font;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, textarea, select, option {
+    font-family: $default-font;
+    resize: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+section.home {
+  height: 80vh;
+}
+
+.order {
+  cursor: pointer !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  background-color: lighten(#aaa, 30%);
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.customer-item {
+  cursor: pointer !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  background-color: lighten(#aaa, 30%);
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.product-item {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  background-color: lighten(#aaa, 30%);
+}
