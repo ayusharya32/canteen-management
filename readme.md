@@ -1,7 +1,6 @@
 # **Canteen Management System**
 
 ![cms-preview-1](assets/cms-1.PNG)
-![cms-preview-2](assets/cms-2.PNG)
 
 A web app for managing *billing, customers, orders, statistics* for a canteen. 
 
