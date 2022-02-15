@@ -1,6 +1,6 @@
 # **Canteen Management System**
 
-![cms-preview-1](assets/cms-1.PNG)
+![cms-preview](https://aryaayush.netlify.app/images/cms-1.png)
 
 A web app for managing *billing, customers, orders, statistics* for a canteen. 
 
@@ -14,6 +14,6 @@ This app is built using ***MongoDB, ExpressJS, NodeJS, and React*** and is hoste
 Click the link below and check it out now:\
 https://cms-billing.herokuapp.com/ 
 
-Check out my personal site for more apps like this:\
+Check out my site for more apps like this:\
 https://aryaayush.netlify.app/
 
